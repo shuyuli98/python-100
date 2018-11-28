@@ -6,3 +6,15 @@ for a in range(1,5):
       if(a != b) and (b != c) and (c != a)
         print(a,b,c)
         
+       
+正确写法：
+for a in range(1,5):
+  for b in range(1,5):
+    for c in range(1,5):
+      if(a != b) and (b != c) and (c != a):
+        print (a,b,c)
+        
+ 
+ 订正：
+ if后面要加冒号
+ print要加括号 abc不用打空格
