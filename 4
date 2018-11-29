@@ -1,2 +1,24 @@
 #输入某年某月某日，判断这一天是这一年的第几天？#
 备注1：input输出的是字符串 所以我们要用int(input())转换
+
+year = 2018
+month = 3
+day = 15
+
+
+days=[31,28,31,30,31,30,31,31,30,31,30,31]
+
+ans = sum(days[:month-1]) + day
+
+#leap year#
+if (year % 400 == 0) or (year %100 != 0 and year %4 ==0):
+  ans = ans + 1
+
+print(ans)
+
+
+
+
+
+
+涉及list 要用[]
